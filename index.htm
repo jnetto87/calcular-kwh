@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular Kwh</title>
+</head>
+
+<body>
+    <h1>Calculadora de Kwh</h1>
+    <div class="caixa-mae">
+
+        <p class="p1">POTÊNCIA DO(S) APARELHO(S) EM Watts</p>
+        <input id="valorWatts" class="input-maior" type="number" placeholder="Valor em Watts">
+
+        <p class="p1">TEMPO DE USO DIARIO</p>
+        <input id="valorHoras" class="input-maior" type="number" placeholder="Ex: 12 Horas">
+
+        <div class="caixa-filho">
+            <p class="p2">Tempo de dias</p>
+            <input id="valorDias" class="input2" type="number" placeholder="Ex: 29">
+
+            <p class="p2-2">Preço do Kwh</p>
+            <input id="valorPreco" class="input2-2" type="number" placeholder="R$0,00">
+        </div>
+
+        <p class="p3">O preço do kwh você encontra na conta de luz.</p>
+        <button onclick="CalcularKwh()">CALCULAR</button>
+        <div id="resultado"></div>
+
+    </div>
+
+</body>
+<script src="./script.js"></script>
+</html>
